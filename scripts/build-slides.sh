@@ -17,10 +17,6 @@ cp -r assets/* docs/ 2>/dev/null || echo "No assets to copy"
 echo "🌐 Building HTML slides..."
 npx marp src/slides.md --html --allow-local-files --output docs/index.html
 
-# Add favicon and meta tags
-echo "🔖 Adding favicon and meta tags..."
-node scripts/add-favicon.js
-
 # Build PDF with fallback
 echo "📄 Building PDF slides..."
 if [ -n "$PUPPETEER_EXECUTABLE_PATH" ] && [ -f "$PUPPETEER_EXECUTABLE_PATH" ]; then

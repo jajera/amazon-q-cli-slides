@@ -64,11 +64,7 @@ style: |
   }
 ---
 
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="shortcut icon" href="favicon.ico">
-
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js"></script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -102,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 > 🚀 *Key milestones in the evolution of Amazon Q*
 
-<div class="mermaid">
+<pre class="mermaid">
 gantt
     title Amazon Q Development Timeline
     dateFormat YYYY-MM-DD
@@ -112,7 +108,7 @@ gantt
     Amazon Q Announced                 :q_announce, 2023-11-28, 5d
     Developer GA (CLI & IDE Agent)     :q_ga, 2024-04-30, 5d
     GitHub Integration Preview         :q_github, 2025-05-05, 5d
-</div>
+</pre>
 
 ---
 
