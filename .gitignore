@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Build outputs (generated website - keep index.html and slides.pdf)
+docs/*.html
+docs/*.pdf
+# But ignore copied assets (they come from assets/ folder)
+docs/favicon.*
+docs/*.png
+docs/*.ico
+
+# Temporary files
+*.tmp.html
+*.tmp.pdf
+
+# Development files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor settings (user-specific)
+.vscode/settings.json.local
+
+# Temporary files
+*.tmp
+*.temp
