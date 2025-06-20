@@ -1,0 +1,11 @@
+# Marp Configuration
+allowLocalFiles: true
+html: true
+engine: '@marp-team/marp-core'
+themeSet: './themes'
+options:
+  looseYAML: true
+  markdown:
+    breaks: true
+    html: true
+theme: default

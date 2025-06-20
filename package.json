@@ -1,0 +1,20 @@
+{
+  "name": "amazon-q-cli-slides",
+  "version": "1.0.0",
+  "description": "Amazon Q CLI Overview Slides",
+  "main": "index.js",
+  "scripts": {
+    "build": "marp src/slides.md --html --allow-local-files --output docs/index.html",
+    "build:pdf": "marp src/slides.md --pdf --allow-local-files --output docs/slides.pdf",
+    "serve": "npx http-server docs -p 8080 -o",
+    "dev": "marp -I src --server --watch --allow-local-files --port 8081"
+  },
+  "keywords": ["marp", "slides", "amazon-q", "aws"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.2.0",
+    "@marp-team/marp-core": "^4.1.0",
+    "puppeteer": "^24.10.2"
+  }
+}
