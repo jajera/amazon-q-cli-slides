@@ -3,7 +3,6 @@ allowLocalFiles: true
 html: true
 engine: '@marp-team/marp-core'
 themeSet: './themes'
-template: bespoke
 options:
   looseYAML: true
   markdown:

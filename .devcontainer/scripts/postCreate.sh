@@ -22,11 +22,8 @@ mkdir -p docs
 
 # Build slides like GitHub workflow
 echo "🎬 Building slides (same as GitHub workflow)..."
-echo "  Copying assets to docs directory..."
-mkdir -p docs
-cp -r assets/* docs/ 2>/dev/null || echo "No assets to copy"
-echo "  Building HTML with Mermaid support and favicon..."
-npx marp src/slides.md --html --allow-local-files --template ./templates/template.html --output docs/index.html
+echo "  Building HTML with Mermaid support..."
+npx marp src/slides.md --html --allow-local-files --output docs/index.html
 
 echo "  Building PDF version..."
 npx marp src/slides.md --pdf --allow-local-files --output docs/slides.pdf

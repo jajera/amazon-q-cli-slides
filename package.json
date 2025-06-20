@@ -4,9 +4,8 @@
   "description": "Amazon Q CLI Overview Slides",
   "main": "index.js",
   "scripts": {
-    "build": "npm run copy-assets && marp src/slides.md --html --allow-local-files --template bespoke --output docs/index.html",
+    "build": "marp src/slides.md --html --allow-local-files --output docs/index.html",
     "build:pdf": "marp src/slides.md --pdf --allow-local-files --output docs/slides.pdf",
-    "copy-assets": "mkdir -p docs && cp -r assets/* docs/ 2>/dev/null || true",
     "serve": "npx http-server docs -p 8080 -o",
     "dev": "marp -I src --server --watch --allow-local-files --port 8081"
   },

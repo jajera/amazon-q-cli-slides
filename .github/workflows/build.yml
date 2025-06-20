@@ -36,10 +36,8 @@ jobs:
         run: |
           # Create docs directory if it doesn't exist
           mkdir -p docs
-          # Copy assets to docs directory first
-          cp -r assets/* docs/ 2>/dev/null || echo "No assets to copy"
-          # Build HTML for GitHub Pages with custom template
-          npx marp src/slides.md --html --allow-local-files --template ./templates/template.html --output docs/index.html
+          # Build HTML for GitHub Pages
+          npx marp src/slides.md --html --allow-local-files --output docs/index.html
           # Also generate PDF for download
           npx marp src/slides.md --pdf --allow-local-files --output docs/slides.pdf
 

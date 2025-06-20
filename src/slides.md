@@ -139,14 +139,14 @@ Install Amazon Q CLI for your OS or environment:
 
 To use Amazon Q CLI inside a [Dev Container](https://containers.dev/), add this to your `devcontainer.json`:
 
-```json
-{
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": {
-    "ghcr.io/jajera/features/amazon-q-cli:1": {}
-  }
-}
-```
+    ```json
+    {
+      "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+      "features": {
+        "ghcr.io/jajera/features/amazon-q-cli:1": {}
+      }
+    }
+    ```
 
 This installs Amazon Q CLI using a custom Dev Container Feature you can reuse across projects.
 
@@ -156,19 +156,19 @@ This installs Amazon Q CLI using a custom Dev Container Feature you can reuse ac
 
 ### 🧪 Try These Commands
 
-```bash
-# Ask a question
-q ask "How do I enable versioning on an S3 bucket?"
+    ```bash
+    # Ask a question
+    q ask "How do I enable versioning on an S3 bucket?"
 
-# Explain an error
-q explain "AccessDeniedException from Lambda"
+    # Explain an error
+    q explain "AccessDeniedException from Lambda"
 
-# Generate a script
-q generate "Bash script to create an EC2 instance with CLI"
+    # Generate a script
+    q generate "Bash script to create an EC2 instance with CLI"
 
-# Start an interactive chat session
-q chat
-```
+    # Start an interactive chat session
+    q chat
+    ```
 
 ### 💡 Pro Tip
 
