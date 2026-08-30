@@ -41,6 +41,7 @@ jobs:
           mkdir -p docs
           # Build HTML for GitHub Pages
           npx marp src/slides.md --html --allow-local-files --output docs/index.html
+          bash scripts/inject-ga.sh docs/index.html
           # Also generate PDF for download
           npx marp src/slides.md --pdf --allow-local-files --output docs/slides.pdf
 

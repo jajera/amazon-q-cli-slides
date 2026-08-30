@@ -16,6 +16,7 @@ cp -r assets/* docs/ 2>/dev/null || echo "No assets to copy"
 # Build HTML
 echo "🌐 Building HTML slides..."
 npx marp src/slides.md --html --allow-local-files --output docs/index.html
+bash scripts/inject-ga.sh docs/index.html
 
 # Build PDF with fallback
 echo "📄 Building PDF slides..."
