@@ -3,7 +3,7 @@
 set -euo pipefail
 
 HTML="${1:-docs/index.html}"
-GA_ID="${GA_MEASUREMENT_ID:-G-XVYF21QHR6}"
+GA_ID="${GA_MEASUREMENT_ID:-G-6GP64SX615}"
 
 if [[ ! -f "$HTML" ]]; then
   echo "Missing $HTML" >&2
